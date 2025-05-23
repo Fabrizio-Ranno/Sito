@@ -13,7 +13,7 @@ html {
   /* Size */
 
   /* Base unit */
-  --unit: 70%;
+  --unit: 16px;
 
   /* Font sizes */
   --textXS: calc(var(--unit) * 1);     /* 8px */
@@ -56,7 +56,6 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  position: fixed !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,11 +90,11 @@ body {
 /* Content */
 .content{
     position: relative;
-    top: 87%;
     width: 100%;
     min-height: 12%;
     z-index: 2;
     background: var(--SecondaryColor);
+    padding: var(--spaceM);
 }
 .content-title{
   color: (--BlackColor);
