@@ -112,7 +112,6 @@
     bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.3rem;
     color: var(--WhiteColor);
     animation: bounce 2s infinite;
     cursor: pointer;
