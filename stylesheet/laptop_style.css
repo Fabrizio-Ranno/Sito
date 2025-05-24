@@ -1,15 +1,15 @@
 /* ^^^ Laptop ^^^ */
 @media (min-width: 1024px) and (max-width: 1439px) {
   *{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
   }
   :root {
     /*Color*/
-    --PrimaryColor: #5c2e0d;
+    /* --PrimaryColor: #5c2e0d;
     --SecondaryColor: #3f5a9d;
     --BackgroundColor: #538160;
     --WhiteColor: #DBC1AC;
-    --BlackColor: #69665C;
+    --BlackColor: #69665C; */
 
     /* Base unit */
     --unit: 18px;
@@ -75,7 +75,7 @@
     font-weight: bold;
     color: white;
     border: 0.3125em solid var(--WhiteColor); /* 5px */
-    padding: 1.2em 1.5em; /* ~19px top/bottom, 24px left/right */
+    padding: 0.9em 1.5em; /* ~19px top/bottom, 24px left/right */
     border-radius: 0.3125em; /* 5px */
     line-height: 1.2em;
     margin-bottom: 1.5em; /* ~24px */
@@ -131,29 +131,5 @@
     font-size: var(--textL);
   }
 
-  /* Footer */
-  .footer {
-    width: 100%;
-    margin: 0;
-    background-color: #000; /* Nero */
-    color: var(--WhiteColor);
-    text-align: center;
-    padding: var(--spaceL) var(--spaceM); /* 24px vertical, 16px horizontal */
-    font-size: var(--textS); /* 12px */
-  }
 
-  .footer-title {
-    font-size: var(--textM); /* 16px */
-    font-weight: bold;
-    margin-bottom: var(--spaceS); /* 8px */
-  }
-
-  .footer-text a {
-    color: var(--WhiteColor);
-    text-decoration: none;
-  }
-
-  .footer-text a:hover {
-    text-decoration: underline;
-  }
 }

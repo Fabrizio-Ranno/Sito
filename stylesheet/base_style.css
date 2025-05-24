@@ -9,7 +9,7 @@ html {
   /*Color*/
   --PrimaryColor: #5c2e0d;
   --SecondaryColor: #3f5a9d;
-  --BackgroundColor: #538160;
+  --BackgroundColor: #5c2e0d;
   --WhiteColor: #DBC1AC;
   --BlackColor: #69665C;
 
@@ -142,11 +142,11 @@ p, .content-text {
   color: var(--WhiteColor);
   text-align: center;
   padding: var(--spaceL) var(--spaceM); /* 24px vertical, 16px horizontal */
-  font-size: var(--textS); /* 12px */
+  font-size: var(--textM); /* 12px */
 }
 
 .footer-title {
-  font-size: var(--textM); /* 16px */
+  font-size: var(--textL); /* 16px */
   font-weight: bold;
   margin-bottom: var(--spaceS); /* 8px */
 }

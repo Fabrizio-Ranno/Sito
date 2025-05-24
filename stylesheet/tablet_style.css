@@ -1,15 +1,18 @@
 /* ^^^ Tablet ^^^ */
 @media (min-width: 768px) and (max-width: 1023px) {
+  *{
+    outline: 1px solid yellow;
+  }
   :root {
     /*Color*/
-    --PrimaryColor: #5c2e0d;
+    /* --PrimaryColor: #5c2e0d;
     --SecondaryColor: #3f5a9d;
     --BackgroundColor: #538160;
     --WhiteColor: #DBC1AC;
-    --BlackColor: #69665C;
+    --BlackColor: #69665C; */
 
     /* Base unit */
-    --unit: 20px;
+    --unit: 16px;
 
     /* Font sizes */
     --textXS: calc(var(--unit) * 0.5);  /* 8px */
