@@ -1,6 +1,6 @@
 @media(min-width: 320px) and (max-width: 374px){
   *{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 
   }
   html {
