@@ -17,10 +17,10 @@ html {
   --unit: 15px;
 
   /* Font sizes */
-  --textXS: calc(var(--unit) * 0.5);
-  --textS: calc(var(--unit) * 0.75);
+  --textXS: calc(var(--unit) * 0.7);
+  --textS: calc(var(--unit) * 1);
   --textM: calc(var(--unit) * 1.3);
-  --textL: calc(var(--unit) * 1.5);
+  --textL: calc(var(--unit) * 1.6);
   --textXL: calc(var(--unit) * 2.4);
   --textXXL: calc(var(--unit) * 3.3);
 
@@ -74,6 +74,7 @@ main{
   font-size: var(--textXXL);
   font-weight: bold;
   color: white;
+  margin: 0 auto;
   border: 0.3125em solid var(--WhiteColor);
   padding: 1.2em 1.5em;
   border-radius: 0.3125em;
@@ -91,7 +92,7 @@ main{
 /* Arrow scroll down */
 .scroll-down {
   position: absolute;
-  bottom: 0.7em;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   font-size: clamp(1.5rem, 4vw, 2.5rem);

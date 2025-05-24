@@ -66,11 +66,13 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     background: var(--PrimaryColor);
     max-width: 100vw;
     overflow-x: hidden;
     box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10vh; /* Fa salire verticalmente */
   }
 
   .splash {
@@ -88,6 +90,7 @@
     /* font-size: var(--textXL); */
     width: 85vw;
     box-sizing: border-box;
+
     padding: 1em;
     max-width: 100vw;
     font-weight: bold;
@@ -108,7 +111,7 @@
   }
 
   /* Arrow scroll down */
-  .scroll-down {
+  /* .scroll-down {
     position: absolute;
     bottom: 0.7em;
     left: 50%;
@@ -123,7 +126,7 @@
   @keyframes bounce {
     0%, 100% { transform: translate(-50%, 0); }
     50% { transform: translate(-50%, 10px); }
-  }
+  } */
 
   /* Content */
   .content {
