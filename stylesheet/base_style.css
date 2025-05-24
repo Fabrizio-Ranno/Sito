@@ -7,10 +7,10 @@ html {
 
 :root {
   /*Color*/
-  --PrimaryColor: #795548; /* #5D4037 */
-  --SecondaryColor: #8BC34A; /* #536DFE */
+  --PrimaryColor: #5D4037; /* #795548 */
+  --SecondaryColor: #E8E8E8; /* #8BC34A */
   --BackgroundColor: #BDBDBD;
-  --WhiteColor: #FFFFFF;
+  --WhiteColor: #E8E8E8;
   --BlackColor: #212121;
 
   /* Base unit */
@@ -123,20 +123,22 @@ main{
 }
 
 .content-title {
-  color: white;
+  color: var(--BlackColor);
+  font-weight: bolder;
   font-size: var(--textXL);
 }
 
 .content-text {
-  color: var(--WhiteColor);
+  color: var(--PrimaryColor);
   font-size: var(--textM);
   word-break: break-word;
+  font-weight: 550;
 }
 
 /* Button and form */
 .contact-button-container {
   text-align: center;
-  margin: var(--spaceL) 0;
+  margin: var(--spaceXXL) 0;
 }
 
 .contact-button {
@@ -147,6 +149,7 @@ main{
   border-radius: var(--spaceS);
   cursor: pointer;
   font-size: var(--textM);
+  font-weight: 550;
 }
 
 .contact-modal {
@@ -175,14 +178,16 @@ main{
 
 .contact-modal-content h2 {
   font-size: var(--textL);
+  font-weight: 550;
   margin-top: 0;
-  margin-bottom: var(--spaceS);
+  margin-bottom: var(--spaceL);
 }
 
 .contact-modal-content label {
   display: block;
   margin-bottom: var(--spaceS);
   font-size: var(--textS);
+  font-weight: 550;
 }
 
 .contact-modal-content input,
@@ -196,7 +201,7 @@ main{
 }
 
 .contact-modal-content button[type="submit"] {
-  background-color: var(--SecondaryColor);
+  background-color: var(--PrimaryColor);
   color: var(--WhiteColor);
   border: none;
   padding: var(--spaceS) var(--spaceM);

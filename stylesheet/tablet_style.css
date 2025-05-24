@@ -31,7 +31,7 @@
   }
 
   body {
-    background-color: var(--BackgroundColor);
+    /* background-color: var(--BackgroundColor); */
     /* font-size: var(--textM); */
     margin: 0;
     padding: 0;
@@ -59,7 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--PrimaryColor);
+    /* background: var(--PrimaryColor); */
   }
 
   .splash {
@@ -95,7 +95,7 @@
     left: 50%;
     transform: translateX(-50%);
     /* font-size: clamp(1.5rem, 4vw, 2.5rem); */
-    color: var(--WhiteColor);
+    /* color: var(--WhiteColor); */
     animation: bounce 2s infinite;
     cursor: pointer;
     padding: 20px;
@@ -112,7 +112,7 @@
     z-index: 1;
     width: 100%;
     box-sizing: border-box;
-    background: var(--SecondaryColor);
+    /* background: var(--SecondaryColor); */
     padding: var(--spaceM);
     border-radius: 0.3em;
     margin-top: 100vh;
