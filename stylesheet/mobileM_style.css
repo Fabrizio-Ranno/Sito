@@ -1,7 +1,7 @@
 /* ^^^ Mobile M ^^^ */
 @media (min-width: 375px) and (max-width: 424px) {
   *{
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     /* outline: 1px solid green; */
 
   }
@@ -23,19 +23,19 @@
     --unit: 12px;
 
     /* Font sizes */
-    --textXS: calc(var(--unit) * 0.5);
+    /* --textXS: calc(var(--unit) * 0.5);
     --textS: calc(var(--unit) * 0.75);
     --textM: calc(var(--unit) * 1);
     --textL: calc(var(--unit) * 1.5);
     --textXL: calc(var(--unit) * 2.4);
-    --textXXL: calc(var(--unit) * 3.3);
+    --textXXL: calc(var(--unit) * 3.3); */
 
     /* Spacing */
-    --spaceXS: calc(var(--unit) * 0.25);
+    /* --spaceXS: calc(var(--unit) * 0.25);
     --spaceS: calc(var(--unit) * 0.5);
     --spaceM: calc(var(--unit) * 1);
     --spaceL: calc(var(--unit) * 1.5);
-    --spaceXL: calc(var(--unit) * 2);
+    --spaceXL: calc(var(--unit) * 2); */
   }
 
   body {
@@ -86,13 +86,13 @@
 
   .splash-title {
     /* font-size: var(--textXL); */
-    width: calc(100vw - 3em);
+    width: 85vw;
     box-sizing: border-box;
     padding: 1em;
     max-width: 100vw;
     font-weight: bold;
     color: white;
-    border: 0.3125em solid var(--WhiteColor);
+    border: 3px solid var(--WhiteColor);
     padding: 1.2em 1.5em;
     border-radius: 0.3125em;
     line-height: 1.2em;

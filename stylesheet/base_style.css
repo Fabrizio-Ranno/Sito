@@ -14,12 +14,12 @@ html {
   --BlackColor: #69665C;
 
   /* Base unit */
-  --unit: 11px;
+  --unit: 15px;
 
   /* Font sizes */
   --textXS: calc(var(--unit) * 0.5);
   --textS: calc(var(--unit) * 0.75);
-  --textM: calc(var(--unit) * 1);
+  --textM: calc(var(--unit) * 1.3);
   --textL: calc(var(--unit) * 1.5);
   --textXL: calc(var(--unit) * 2.4);
   --textXXL: calc(var(--unit) * 3.3);

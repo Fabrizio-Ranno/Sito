@@ -12,19 +12,19 @@
     --unit: 22px;
 
     /* Font sizes */
-    --textXS: calc(var(--unit) * 0.5);
+    /* --textXS: calc(var(--unit) * 0.5);
     --textS: calc(var(--unit) * 0.75);
     --textM: calc(var(--unit) * 1);
     --textL: calc(var(--unit) * 1.5);
     --textXL: calc(var(--unit) * 2.4);
-    --textXXL: calc(var(--unit) * 3.3);
+    --textXXL: calc(var(--unit) * 3.3); */
 
     /* Spacing */
-    --spaceXS: calc(var(--unit) * 0.25);
+    /* --spaceXS: calc(var(--unit) * 0.25);
     --spaceS: calc(var(--unit) * 0.5);
     --spaceM: calc(var(--unit) * 1);
     --spaceL: calc(var(--unit) * 1.5);
-    --spaceXL: calc(var(--unit) * 2);
+    --spaceXL: calc(var(--unit) * 2); */
   }
 
   body {
@@ -71,7 +71,7 @@
     /* font-size: var(--textXXL); */
     font-weight: bold;
     color: white;
-    border: 0.3125em solid var(--WhiteColor);
+    border: 11px solid var(--WhiteColor);
     padding: 1.2em 1.5em;
     border-radius: 0.3125em;
     line-height: 1.2em;
