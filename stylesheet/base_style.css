@@ -7,11 +7,11 @@ html {
 
 :root {
   /*Color*/
-  --PrimaryColor: #5c2e0d;
-  --SecondaryColor: #3f5a9d;
-  --BackgroundColor: #5c2e0d;
-  --WhiteColor: #DBC1AC;
-  --BlackColor: #69665C;
+  --PrimaryColor: #795548; /* #5D4037 */
+  --SecondaryColor: #8BC34A; /* #536DFE */
+  --BackgroundColor: #BDBDBD;
+  --WhiteColor: #FFFFFF;
+  --BlackColor: #212121;
 
   /* Base unit */
   --unit: 15px;
@@ -132,6 +132,94 @@ main{
   font-size: var(--textM);
   word-break: break-word;
 }
+
+/* Button and form */
+.contact-button-container {
+  text-align: center;
+  margin: var(--spaceL) 0;
+}
+
+.contact-button {
+  background-color: var(--PrimaryColor);
+  color: var(--WhiteColor);
+  border: none;
+  padding: var(--spaceS) var(--spaceM);
+  border-radius: var(--spaceS);
+  cursor: pointer;
+  font-size: var(--textM);
+}
+
+.contact-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.contact-modal-content {
+  background: var(--WhiteColor);
+  color: var(--BlackColor);
+  padding: var(--spaceL);
+  border-radius: var(--spaceS);
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  font-size: var(--textS);
+}
+
+.contact-modal-content h2 {
+  font-size: var(--textL);
+  margin-top: 0;
+  margin-bottom: var(--spaceS);
+}
+
+.contact-modal-content label {
+  display: block;
+  margin-bottom: var(--spaceS);
+  font-size: var(--textS);
+}
+
+.contact-modal-content input,
+.contact-modal-content textarea {
+  width: 100%;
+  padding: var(--spaceXS);
+  font-size: var(--textXS);
+  border: 1px solid #ccc;
+  border-radius: var(--spaceXS);
+  margin-top: var(--spaceXS);
+}
+
+.contact-modal-content button[type="submit"] {
+  background-color: var(--SecondaryColor);
+  color: var(--WhiteColor);
+  border: none;
+  padding: var(--spaceS) var(--spaceM);
+  border-radius: var(--spaceXS);
+  cursor: pointer;
+  font-size: var(--textS);
+  margin-top: var(--spaceS);
+}
+
+.close-button {
+  position: absolute;
+  top: var(--spaceS);
+  right: var(--spaceM);
+  font-size: var(--textL);
+  color: var(--BlackColor);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+
 
 /* Footer */
 .footer {

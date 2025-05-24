@@ -51,7 +51,45 @@
           Lo studio riceve su appuntamento dal lunedì al venerdì.<br>
           Chiuso il sabato e la domenica.
         </p>
+        <div class="contact-button-container">
+          <button id="openContactForm" class="contact-button">Scrivimi</button>
+        </div>
+
+
+        <div id="contactModal" class="contact-modal hidden">
+          <div class="contact-modal-content">
+            <span id="closeContactForm" class="close-button">&times;</span>
+            <h2>Contattami</h2>
+            <form action="SCRIVERE QUA IL LINK DI FORMSPREE" method="POST">
+              <label>Nome:<input type="text" name="nome" required></label>
+              <label>Cognome:<input type="text" name="cognome" required></label>
+              <label>Email:<input type="email" name="email" required></label>
+              <label>Messaggio:<textarea name="messaggio" rows="5" required></textarea></label>
+              <button type="submit">Invia</button>
+            </form>
+          </div>
+        </div>
+        <script>
+          const openBtn = document.getElementById('openContactForm');
+          const closeBtn = document.getElementById('closeContactForm');
+          const modal = document.getElementById('contactModal');
+
+          openBtn.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+          });
+
+          closeBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+          });
+
+          window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+              modal.classList.add('hidden');
+            }
+          });
+        </script>
       </div>
+
       <div class="footer">
         <p class="footer-title">Contatti</p>
         <p class="footer-text">
