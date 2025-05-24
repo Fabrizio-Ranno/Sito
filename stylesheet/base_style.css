@@ -142,11 +142,11 @@ p, .content-text {
   color: var(--WhiteColor);
   text-align: center;
   padding: var(--spaceL) var(--spaceM); /* 24px vertical, 16px horizontal */
-  font-size: var(--textM); /* 12px */
+  font-size: var(--textL); /* 12px */
 }
 
 .footer-title {
-  font-size: var(--textL); /* 16px */
+  font-size: var(--textXL); /* 16px */
   font-weight: bold;
   margin-bottom: var(--spaceS); /* 8px */
 }

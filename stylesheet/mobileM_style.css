@@ -2,7 +2,7 @@
 @media (min-width: 375px) and (max-width: 424px) {
   *{
     box-sizing: border-box;
-    outline: 1px solid green;
+    /* outline: 1px solid green; */
 
   }
   html {
@@ -20,7 +20,7 @@
     --BlackColor: #69665C; */
 
     /* Base unit */
-    --unit: 13px;
+    --unit: 15px;
 
     /* Font sizes */
     --textXS: calc(var(--unit) * 0.5);  /* 8px */
