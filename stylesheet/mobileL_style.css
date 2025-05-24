@@ -19,7 +19,7 @@
     --BlackColor: #69665C; */
 
     /* Base unit */
-    --unit: 16px;
+    --unit: 17px;
 
     /* Font sizes */
     /* --textXS: calc(var(--unit) * 0.5);
@@ -94,7 +94,7 @@
     font-weight: bold;
     color: white;
     border: 4px solid var(--WhiteColor);
-    padding: 1.2em 1.5em;
+    padding: 1.2em 0em;
     border-radius: 0.3125em;
     line-height: 1.2em;
     margin-bottom: 1.5em;
