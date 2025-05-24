@@ -111,8 +111,9 @@
   /* Arrow scroll down */
   .scroll-down {
     position: absolute;
-    bottom: 0.7em;
+    bottom: 100px;
     left: 50%;
+    font-size: var(--textXL);
     transform: translateX(-50%);
     /* font-size: 1.3rem; */
     color: var(--WhiteColor);

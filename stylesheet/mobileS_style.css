@@ -109,8 +109,9 @@
   /* Arrow scroll down */
   .scroll-down {
     position: absolute;
-    bottom: 100px;
+    bottom: 130px;
     left: 50%;
+    font-size: var(--textXL);
     transform: translateX(-50%);
     color: var(--WhiteColor);
     animation: bounce 2s infinite;
