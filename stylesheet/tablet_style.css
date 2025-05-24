@@ -98,7 +98,7 @@
     color: var(--WhiteColor);
     animation: bounce 2s infinite;
     cursor: pointer;
-    padding: 1.6em;
+    padding: 20px;
   }
 
   /* @keyframes bounce {
