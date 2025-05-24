@@ -111,9 +111,9 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    box-sizing: border-box; /* importante per evitare overflow */
+    box-sizing: border-box;
     background: var(--SecondaryColor);
-    padding: var(--spaceM); /* 16px */
+    padding: var(--spaceM);
     border-radius: 0.3em;
     margin-top: 100vh;
     border-top-left-radius: 1em;
@@ -121,7 +121,7 @@
     box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
   }
 
-  .content-title {
+  /* .content-title {
     color: white;
     font-size: var(--textXL);
   }
@@ -129,7 +129,7 @@
   .content-text {
     color: var(--WhiteColor);
     font-size: var(--textL);
-  }
+  } */
 
 
 }
