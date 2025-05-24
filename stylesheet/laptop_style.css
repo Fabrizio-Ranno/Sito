@@ -12,7 +12,7 @@
     --BlackColor: #69665C; */
 
     /* Base unit */
-    --unit: 20px;
+    --unit: 21px;
 
     /* Font sizes */
     /* --textXS: calc(var(--unit) * 0.5);
@@ -101,7 +101,7 @@
     padding: 0.5em;
   }
 
-  @keyframes bounce {
+  /* @keyframes bounce {
     0%, 100% { transform: translate(-50%, 0); }
     50% { transform: translate(-50%, 10px); }
   } */

@@ -19,7 +19,7 @@
     --BlackColor: #69665C; */
 
     /* Base unit */
-    --unit: 14px;
+    --unit: 16px;
 
     /* Font sizes */
     /* --textXS: calc(var(--unit) * 0.5);
@@ -109,7 +109,7 @@
   }
 
   /* Arrow scroll down */
-  /* .scroll-down {
+  .scroll-down {
     position: absolute;
     bottom: 0.7em;
     left: 50%;
@@ -121,7 +121,7 @@
     padding: 0.5em;
   }
 
-  @keyframes bounce {
+  /* @keyframes bounce {
     0%, 100% { transform: translate(-50%, 0); }
     50% { transform: translate(-50%, 10px); }
   } */
