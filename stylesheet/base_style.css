@@ -132,7 +132,7 @@ main{
   color: var(--PrimaryColor);
   font-size: var(--textM);
   word-break: break-word;
-  font-weight: 550;
+  font-weight: 600;
 }
 
 /* Image */
