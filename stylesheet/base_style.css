@@ -135,6 +135,21 @@ main{
   font-weight: 550;
 }
 
+/* Image */
+.content-image-container {
+  float: right;
+  margin-left: var(--spaceL);
+  margin-bottom: var(--spaceL);
+  max-width: 40%;
+}
+
+.content-image {
+  width: 100%; /* Regola la grandezza */
+  height: auto;
+  border-radius: var(--spaceXS);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Button and form */
 .contact-button-container {
   text-align: center;
