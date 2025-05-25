@@ -157,29 +157,25 @@ main{
   gap: 20px;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  flex-wrap: nowrap; /* Forza disposizione su una riga */
+}
+
+.address-text {
+  flex: 1; /* Occupa tutto lo spazio disponibile a sinistra */
+  min-width: 200px; /* Per evitare che diventi troppo stretto */
+  color: var(--PrimaryColor);
+  font-size: var(--textM);
 }
 
 .address-map {
-  width: 300px; /* Regola la grandezza */
-  height: 200px; /* Regola la grandezza */
-  border: 3px solid #ccc; /* Cornice */
+  width: 400px;
+  max-width: 40vw; /* Massima larghezza 40% viewport width */
+  height: 300px;
+  border: 3px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Non si restringe */
 }
-
-
-/* Versione mobile: nasconde la mappa */
-@media screen and (max-width: 768px) {
-  .address-map {
-    display: none;
-  }
-
-  .address-map-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
 
 /* Button and form */
 .contact-button-container {

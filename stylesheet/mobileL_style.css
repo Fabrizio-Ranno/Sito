@@ -144,6 +144,16 @@
     overflow-x: hidden;
   }
 
+  /* Hide map */
+  .address-map {
+    display: none;
+  }
+
+  .address-map-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
   /* .content-title {
     color: white;
     font-size: var(--textXL);
