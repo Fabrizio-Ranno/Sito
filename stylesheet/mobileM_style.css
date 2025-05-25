@@ -145,14 +145,14 @@
   }
 
   /* Hide map */
-  /* .address-map {
+  .address-map {
     display: none;
   }
 
   .address-map-container {
     flex-direction: column;
     align-items: flex-start;
-  } */
+  }
 
   /* .content-title {
     color: white;
