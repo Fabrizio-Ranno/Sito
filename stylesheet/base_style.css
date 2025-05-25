@@ -150,6 +150,37 @@ main{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Maps */
+.address-map-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.address-map {
+  width: 300px; /* Regola la grandezza */
+  height: 200px; /* Regola la grandezza */
+  border: 3px solid #ccc; /* Cornice */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra */
+}
+
+
+/* Versione mobile: nasconde la mappa */
+@media screen and (max-width: 768px) {
+  .address-map {
+    display: none;
+  }
+
+  .address-map-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
 /* Button and form */
 .contact-button-container {
   text-align: center;
@@ -165,11 +196,12 @@ main{
   cursor: pointer;
   font-size: var(--textM);
   font-weight: 550;
-  transition: transform 0.1s ease; /*  Cambia per velocità animazione */
+  transition: transform 0.1s ease, background-color 0.3s ease; /*  Cambia per velocità animazione */
   }
 
 .contact-button:hover {
   transform: scale(1.05);
+  background-color: var(--BlackColor);
   }
 
 .contact-modal {
@@ -313,6 +345,11 @@ main{
   font-size: var(--textM);
   font-weight: bold;
   margin-bottom: var(--spaceS);
+}
+
+.footer-text i {
+  margin-right: 8px;
+  color: #E8E8E8; /* Puoi anche usare i colori ufficiali di Facebook e Instagram */
 }
 
 .footer-text a {
