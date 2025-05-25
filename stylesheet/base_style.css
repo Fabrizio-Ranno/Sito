@@ -138,19 +138,24 @@ main{
 /* Button and form */
 .contact-button-container {
   text-align: center;
-  margin: var(--spaceXXL) 0;
+  margin: var(--spaceXL) 0;
 }
 
 .contact-button {
   background-color: var(--PrimaryColor);
   color: var(--WhiteColor);
   border: none;
-  padding: var(--spaceS) var(--spaceM);
+  padding: var(--spaceM) var(--spaceM);
   border-radius: var(--spaceS);
   cursor: pointer;
   font-size: var(--textM);
   font-weight: 550;
-}
+  transition: transform 0.1s ease; /*  Cambia per velocità animazione */
+  }
+
+.contact-button:hover {
+  transform: scale(1.05);
+  }
 
 .contact-modal {
   position: fixed;
@@ -163,6 +168,37 @@ main{
   justify-content: center;
   align-items: center;
   z-index: 10;
+  animation: fadeIn 0.4s ease; /* Cambia per velocità animazione */
+}
+
+.fade-in .contact-modal-content {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.fade-out .contact-modal-content {
+  animation: fadeOut 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
 }
 
 .contact-modal-content {
@@ -224,6 +260,27 @@ main{
   display: none;
 }
 
+#form-response {
+  margin-top: var(--spaceM);
+  padding: var(--spaceS);
+  border-radius: var(--spaceXS);
+  background-color: rgba(93, 64, 55, 0.1); /* var(--PrimaryColor) with transparency */
+  color: var(--PrimaryColor);
+  font-weight: 550;
+  font-size: var(--textS);
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  border: 1px solid var(--PrimaryColor);
+}
+
+#form-response.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#form-response:not(.hidden) {
+  opacity: 1;
+}
 
 
 /* Footer */

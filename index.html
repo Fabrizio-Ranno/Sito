@@ -1,6 +1,6 @@
 <!-- https://fabrizio-ranno.github.io/Test/ -->
 <!DOCTYPE html>
-<html lang=it dir="ltr">
+<html lang="it" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,74 +31,125 @@
       <div class="content" id="content">
         <p class="content-title">Studio Legale Avv. Barbara Fiorito</p>
         <p class="content-text">
-          Lo Studio Legale dell’Avv. Barbara Fiorito, con sede in Via Monfalcone 2/4 a Paternò, offre consulenza e assistenza legale nell’ambito del diritto civile, con particolare competenza nei seguenti settori:
+          Lo Studio Legale dell’Avv. Barbara Fiorito offre consulenza e assistenza legale nelle seguenti materie:
         </p>
         <p class="content-text">
-          • Diritto di famiglia e diritto minorile<br>
-          • Risarcimento del danno e infortunistica<br>
-          • Recupero crediti<br>
-          • Volontaria giurisdizione<br>
-          • Previdenza e diritto tributario<br>
-          • Attività extra giudiziaria
+          • Diritto di famiglia<br>
+          • Separazione, divorzio, regolamentazione dell’affido e del mantenimento dei figli<br>
+          • Diritto minorile<br>
+          • Adozioni<br>
+          • Volontaria giurisdizione (amministrazione di sostegno, interdizione)<br>
+          • Infortunistica stradale<br>
+          • Malasanità<br>
+          • Risarcimento danno da responsabilità professionale<br>
+          • Recupero crediti – locazioni – condomini<br>
+          • Contrattualistica<br>
+          • Successioni – divisioni<br>
+          • Previdenza, diritto del lavoro e diritto tributario
         </p>
         <p class="content-text">
-          L’avv. Fiorito svolge inoltre incarichi come Curatore Speciale del Minore e come Difensore d’Ufficio per adulti nei procedimenti relativi all’adottabilità.
+          L’avv. Fiorito è anche Curatore Speciale del Minore, Difensore distrettuale di Catania per il progetto "Zero molestie in rete" promosso da SINALP (antiviolenza in rete in difesa delle donne).
         </p>
         <p class="content-text">
-          È possibile accedere ai servizi legali anche tramite patrocinio a spese dello Stato (gratuito patrocinio).
+          È iscritta all’albo speciale dei patrocinatori a spese dello Stato e negli elenchi dei Curatori Speciali dei Minori presso il Tribunale di Catania e il Tribunale per i Minorenni di Catania.
         </p>
         <p class="content-text">
-          Lo studio riceve su appuntamento dal lunedì al venerdì.<br>
-          Chiuso il sabato e la domenica.
+          Lo studio legale, grazie all’utilizzo dei più moderni strumenti telematici, fornisce assistenza giudiziale e stragiudiziale anche a distanza.
         </p>
         <div class="contact-button-container">
           <button id="openContactForm" class="contact-button">Scrivimi</button>
         </div>
 
-
         <div id="contactModal" class="contact-modal hidden">
           <div class="contact-modal-content">
             <span id="closeContactForm" class="close-button">&times;</span>
             <h2>Contattami</h2>
-            <form action="SCRIVERE QUA IL LINK DI FORMSPREE" method="POST">
+            <form id="contact-form">
               <label>Nome:<input type="text" name="nome" required></label>
               <label>Cognome:<input type="text" name="cognome" required></label>
               <label>Email:<input type="email" name="email" required></label>
               <label>Messaggio:<textarea name="messaggio" rows="5" required></textarea></label>
               <button type="submit">Invia</button>
             </form>
+            <div id="form-response" class="hidden">Messaggio inviato con successo!</div>
           </div>
         </div>
-        <script>
-          const openBtn = document.getElementById('openContactForm');
-          const closeBtn = document.getElementById('closeContactForm');
-          const modal = document.getElementById('contactModal');
-
-          openBtn.addEventListener('click', () => {
-            modal.classList.remove('hidden');
-          });
-
-          closeBtn.addEventListener('click', () => {
-            modal.classList.add('hidden');
-          });
-
-          window.addEventListener('click', (e) => {
-            if (e.target === modal) {
-              modal.classList.add('hidden');
-            }
-          });
-        </script>
       </div>
 
       <div class="footer">
         <p class="footer-title">Contatti</p>
         <p class="footer-text">
-          Tel: <a href="tel:+390000000000">+39 000 000 0000</a><br>
-          Email: <a href="mailto:studio.fiorito@example.com">studio.fiorito@example.com</a><br>
-          Instagram: <a href="https://instagram.com/barbara.fiorito" target="_blank">@barbara.fiorito</a><br>
-          Facebook: <a href="https://facebook.com/avv.fiorito" target="_blank">Avv. Barbara Fiorito</a>
+          Cell: <a href="tel:+393297932118">329 793 2118</a><br>
+          Email: <a href="mailto:fiorito.barbara@virgilio.it">fiorito.barbara@virgilio.it</a><br>
+          PEC: <a href="mailto:barbara.fiorito@pec.ordineavvocaticatania.it">barbara.fiorito@pec.ordineavvocaticatania.it</a><br>
+          Instagram: <a href="https://www.instagram.com/barby81f/" target="_blank">@barbara.fiorito</a><br>
+          Facebook: <a href="https://www.facebook.com/barbara.fiorito.81?locale=it_IT" target="_blank">Avv. Barbara Fiorito</a>
         </p>
       </div>
-  </main>
+    </main>
   </body>
 </html>
+<script>
+  const openBtn = document.getElementById('openContactForm');
+  const closeBtn = document.getElementById('closeContactForm');
+  const modal = document.getElementById('contactModal');
+  const form = document.getElementById('contact-form');
+  const responseMsg = document.getElementById('form-response');
+
+  // Funzione per chiudere con animazione
+  function closeModal() {
+    modal.classList.remove('fade-in');
+    modal.classList.add('fade-out');
+
+    setTimeout(() => {
+      modal.classList.add('hidden');
+      modal.classList.remove('fade-out');
+      responseMsg.classList.add('hidden');
+    }, 400); // Deve coincidere con la durata della fadeOut (0.4s)
+  }
+
+  // Apri il modal con animazione
+  openBtn.addEventListener('click', () => {
+    modal.classList.remove('hidden');
+    modal.classList.remove('fade-out');
+    modal.classList.add('fade-in');
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  // Gestione invio AJAX
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('CAMBIARE LINK FORMSPREE', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      });
+
+      if (response.ok) {
+        form.reset();
+        responseMsg.textContent = 'Messaggio inviato con successo!';
+        responseMsg.classList.remove('hidden');
+
+        setTimeout(() => {
+          closeModal();
+        }, 2500);
+      } else {
+        responseMsg.textContent = 'Errore durante l\'invio. Riprova.';
+        responseMsg.classList.remove('hidden');
+      }
+    } catch (error) {
+      responseMsg.textContent = 'Errore di rete. Riprova.';
+      responseMsg.classList.remove('hidden');
+    }
+  });
+</script>
