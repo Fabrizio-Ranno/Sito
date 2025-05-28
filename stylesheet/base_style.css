@@ -22,7 +22,7 @@ html {
   --textM: calc(var(--unit) * 1.3);
   --textL: calc(var(--unit) * 1.6);
   --textXL: calc(var(--unit) * 2.4);
-  --textXXL: calc(var(--unit) * 3.3);
+  --textXXL: calc(var(--unit) * 2.7);
 
   /* Spacing */
   --spaceXS: calc(var(--unit) * 0.25);
@@ -62,7 +62,7 @@ main{
   justify-content: center;
   background: var(--PrimaryColor);
   background-image: url("../media/splash-background.png");
-  background-size: cover;
+  background-size: 58vw;
   background-position: center;
   background-repeat: no-repeat;
 }
