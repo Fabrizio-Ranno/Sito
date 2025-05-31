@@ -199,7 +199,7 @@ main{
   font-weight: 400;
 }
 
-.content-text-bolder {
+.content-text-bold {
   font-weight: 800;
   font-size: var(--textML);
 }
