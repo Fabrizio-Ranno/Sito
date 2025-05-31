@@ -20,7 +20,7 @@
     --BlackColor: #69665C; */
 
     /* Base unit */
-    --unit: 15px;
+    --unit: 14px;
 
     /* Font sizes */
     /* --textXS: calc(var(--unit) * 0.5);
@@ -170,7 +170,7 @@
   .contact-button.pulsing {
     animation: pulse 1s ease-in-out infinite;
   }
-  
+
   @keyframes pulse {
     0% {
       transform: scale(1);
