@@ -131,6 +131,7 @@ main{
   color: var(--BlackColor);
   font-weight: bolder;
   font-size: var(--textXL);
+  font-family: Georgia, serif;
 }
 
 .content-text {
