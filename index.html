@@ -20,7 +20,7 @@
 
     <div class="splash-container">
       <div class="splash">
-        <h1 class="splash-title">Avv. Barbara Fiorito</h1>
+        <h1 class="splash-title">Avvocato <br>Barbara Fiorito</h1>
         <p class="splash-subtitle">
           Attività legale nel settore di diritto civile
         </p>
@@ -116,6 +116,8 @@
     </main>
   </body>
 </html>
+
+
 <script>
   const openBtn = document.getElementById('openContactForm');
   const closeBtn = document.getElementById('closeContactForm');
@@ -179,4 +181,29 @@
       responseMsg.classList.remove('hidden');
     }
   });
+
+  // Effetto pulsante "contact-button" dopo 3 secondi di inattività
+  const pulseButton = document.querySelector('.contact-button');
+  let inactivityTimer;
+
+  function startInactivityTimer() {
+    clearTimeout(inactivityTimer);
+    if (pulseButton) {
+      pulseButton.classList.remove('pulsing');
+    }
+
+    inactivityTimer = setTimeout(() => {
+      if (pulseButton) {
+        pulseButton.classList.add('pulsing');
+      }
+    }, 3000); // 3 secondi di inattività
+  }
+
+  // Eventi che fanno ripartire il timer di inattività
+  ['mousemove', 'scroll', 'keydown', 'touchstart'].forEach(event => {
+    document.addEventListener(event, startInactivityTimer, { passive: true });
+  });
+
+  // Avvio iniziale del timer
+  startInactivityTimer();
 </script>
