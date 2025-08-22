@@ -65,11 +65,11 @@ html {
 
 :root {
   /*Color*/
-  --PrimaryColor: #5D4037; /* #795548 */
-  --SecondaryColor: #E8E8E8; /* #8BC34A */
-  --BackgroundColor: #BDBDBD;
-  --WhiteColor: #E8E8E8;
-  --BlackColor: #212121;
+  --PrimaryColor: #7B1B38 ;   /*#5D4037  #795548 */
+  --SecondaryColor: #ECF0F1 ;   /*#E8E8E8  #8BC34A */
+  --BackgroundColor: #F8F9FA ;    /*#BDBDBD*/
+  --WhiteColor: #FFFFFF ;   /*#E8E8E8*/
+  --BlackColor: #000000 ;   /*#212121*/
 
   /* Base unit */
   --unit: 15px;
@@ -120,7 +120,7 @@ main{
   align-items: center;
   justify-content: center;
   background: var(--PrimaryColor);
-  background-image: url("../media/splash-background.png");
+  background-image: url("../media/splash-background.webp");
   background-size: 58vw;
   background-position: center;
   background-repeat: no-repeat;

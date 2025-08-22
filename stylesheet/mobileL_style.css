@@ -72,7 +72,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 10vh; /* Fa salire verticalmente */
-    background-image: url("../media/splash-background.png");
+    background-image: url("../media/splash-background.webp");
     background-size: 80vw;
     background-position: center;
     background-repeat: no-repeat;

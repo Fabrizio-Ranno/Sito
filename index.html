@@ -1,10 +1,30 @@
 <!-- https://fabrizio-ranno.github.io/Test/ -->
 <!DOCTYPE html>
 <html lang="it" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avv. Barbara Fiorito</title>
+
+    <!-- SEO base -->
+    <meta name="description" content="Studio Legale Avv. Barbara Fiorito a Paternò (Catania). Diritto di famiglia, separazioni e divorzi, minori e adozioni, successioni, lavoro, tributario, malasanità e infortunistica stradale.">
+    <meta name="keywords" content="avvocato, studio legale, Catania, Paternò, diritto di famiglia, separazione, divorzio, affido, mantenimento figli, diritto minorile, adozioni, amministrazione di sostegno, interdizione, infortunistica stradale, malasanità, responsabilità professionale, risarcimento danni, recupero crediti, locazioni, condomini, contrattualistica, successioni, divisioni, diritto del lavoro, previdenza, diritto tributario">
+    <meta name="author" content="Avv. Barbara Fiorito">
+
+    <!-- Social Meta -->
+    <meta property="og:title" content="Studio Legale Avv. Barbara Fiorito - Paternò">
+    <meta property="og:description" content="Diritto di famiglia, separazioni, divorzi, diritto minorile, malasanità, lavoro, tributario e molto altro.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.avvbarbarafiorito.it">
+    <meta property="og:image" content="https://www.avvbarbarafiorito.it/media/face-image.webp">
+    <meta property="og:locale" content="it_IT">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Studio Legale Avv. Barbara Fiorito">
+    <meta name="twitter:description" content="Diritto di famiglia, separazioni, divorzi, diritto minorile, malasanità, lavoro, tributario e molto altro.">
+    <meta name="twitter:image" content="https://www.avvbarbarafiorito.it/media/face-image.webp">
+
+    <title>Studio Legale Avv. Barbara Fiorito - Avvocato a Paternò (Catania)</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="stylesheet/base_style.css">
     <link rel="stylesheet" href="stylesheet/mobileS_style.css">
@@ -15,6 +35,44 @@
     <link rel="stylesheet" href="stylesheet/laptopL_style.css">
     <link rel="stylesheet" href="stylesheet/4K_style.css">
     <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Studio Legale Avv. Barbara Fiorito",
+      "image": "https://www.avvbarbarafiorito.it/media/face-image.webp",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Monfalcone 15",
+        "addressLocality": "Paternò",
+        "addressRegion": "CT",
+        "postalCode": "95047",
+        "addressCountry": "IT"
+      },
+      "telephone": "+39 329 793 2118",
+      "email": "fiorito.barbara@virgilio.it",
+      "url": "https://www.avvbarbarafiorito.it",
+      "priceRange": "€€",
+      "areaServed": "Catania e provincia",
+      "serviceType": [
+        "Diritto di famiglia",
+        "Separazione e divorzio",
+        "Affido e mantenimento figli",
+        "Diritto minorile e adozioni",
+        "Amministrazione di sostegno e interdizione",
+        "Infortunistica stradale",
+        "Malasanità",
+        "Responsabilità professionale",
+        "Recupero crediti",
+        "Locazioni e condomini",
+        "Contrattualistica",
+        "Successioni e divisioni",
+        "Previdenza e diritto del lavoro",
+        "Diritto tributario"
+      ]
+    }
+    </script>
   </head>
   <body>
 
@@ -32,7 +90,7 @@
       <div class="content" id="content">
         <p class="content-title">Studio Legale Avv. Barbara Fiorito</p>
         <div class="content-image-container">
-          <img src="media/face-image.jpeg" alt="Studio Legale Avv. Barbara Fiorito" class="content-image">
+          <img src="media/face-image.webp" alt="Studio Legale Avv. Barbara Fiorito" class="content-image">
         </div>
         <p class="content-text">
           Lo Studio Legale dell’Avv. Barbara Fiorito offre consulenza e assistenza legale nelle seguenti materie:
@@ -65,7 +123,7 @@
           <div class="address-text">
             <p class="content-text">
               <span class="content-text-bold">Indirizzo</span>: <br>
-              <a href="https://maps.app.goo.gl/c1ywCPnvPYh7nYHY7" target="_blank">Via Monfalcone 15 – Paternò CT</a>
+              <a href="https://maps.app.goo.gl/c1ywCPnvPYh7nYHY7" target="_blank">Via Monfalcone 2-4 – Paternò CT</a>
             </p>
           </div>
           <iframe
@@ -101,7 +159,7 @@
       <div class="footer">
         <p class="footer-title">Contatti</p>
         <p class="footer-text">
-          Cell: <a href="tel:+393297932118">329 793 2118</a><br>
+          Cell: <a href="tel:+39095504836">095504836</a><br>
           Email: <a href="mailto:fiorito.barbara@virgilio.it">fiorito.barbara@virgilio.it</a><br>
           PEC: <a href="mailto:barbara.fiorito@pec.ordineavvocaticatania.it">barbara.fiorito@pec.ordineavvocaticatania.it</a><br>
           <br>
@@ -158,7 +216,7 @@
     const formData = new FormData(form);
 
     try {
-      const response = await fetch('CAMBIARE LINK FORMSPREE', {
+      const response = await fetch('https://formspree.io/f/mldlqwop', {
         method: 'POST',
         headers: { 'Accept': 'application/json' },
         body: formData
