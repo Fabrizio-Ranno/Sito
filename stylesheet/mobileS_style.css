@@ -162,6 +162,17 @@
   .content-text {
     font-weight: normal;
   }
+   /* Contact */
+ .contact-modal-content input,
+ .contact-modal-content textarea {
+  width: 100%;
+  padding: var(--spaceXS);
+  font-size: var(--textXS);
+  border: 1px solid #ccc;
+  border-radius: var(--spaceXS);
+  margin-top: var(--spaceXS);
+  height: var(--spaceL);
+ }
   /* Button */
   .contact-button.pulsing {
     animation: pulse 1s ease-in-out infinite;
@@ -179,3 +190,4 @@
     }
   }
 }
+
