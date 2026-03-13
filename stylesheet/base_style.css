@@ -346,6 +346,7 @@ main{
   border: 1px solid #ccc;
   border-radius: var(--spaceXS);
   margin-top: var(--spaceXS);
+  height: var(--spaceM);
 }
 
 .contact-modal-content button[type="submit"] {
@@ -425,3 +426,4 @@ main{
 .footer-text a:hover {
   text-decoration: underline;
 }
+
