@@ -174,7 +174,7 @@
   border: 1px solid #ccc;
   border-radius: var(--spaceXS);
   margin-top: var(--spaceXS);
-  height: var(--spaceL);
+  height: var(--spaceXL);
  }
   /* Button */
   .contact-button.pulsing {
@@ -193,4 +193,5 @@
     }
   }
 }
+
 
